@@ -1,0 +1,46 @@
+.container-logos-top {
+  display: flex;
+  position: absolute;
+  z-index: 999;
+  align-items: center;
+  right: 38%;
+  top: 10px;
+}
+
+.sponsors {
+  margin-right: 10px;
+}
+
+.sponsors .link {
+  transition: opacity 0.5s linear;
+}
+
+.sponsors .link .logo {
+  width: 150px;
+  height: 40px;
+}
+
+.team-logo {
+  width: 30px;
+  height: 30px;
+}
+
+.ase-logo {
+  position: absolute;
+  bottom: 20px;
+  right: 30%;
+  width: 160px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-logos-top {
+    left: 25%;
+    top: 60px;
+  }
+
+  .ase-logo {
+    bottom: 60px;
+    right: 5%;
+    width: 120px;
+  }
+}

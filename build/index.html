@@ -1896,6 +1896,18 @@ Click the help icon above to learn more.
         color: #ffffff;
       }
 
+      #wp3d-iframe-wrap .iframe-logo-overlay {
+        position: absolute;
+        width: auto;
+        height: 50px;
+        right: 15px;
+        bottom: 50px;
+      }
+
+      #wp3d-iframe-wrap.has-highlight-reel .iframe-logo-overlay {
+        bottom: 220px;
+      }
+
       #wp3d-iframe-wrap,
       #wp3d-header-branding,
       #wp3d-intro {
@@ -2019,18 +2031,6 @@ Click the help icon above to learn more.
       #wp3d-intro.header-bar-disabled,
       #wp3d-iframe-wrap.branded.header-bar-disabled {
         top: 0px;
-      }
-
-      #wp3d-iframe-wrap .iframe-logo-overlay {
-        position: absolute;
-        width: auto;
-        height: 50px;
-        left: 15px;
-        bottom: 90px;
-      }
-
-      #wp3d-iframe-wrap.has-highlight-reel .iframe-logo-overlay {
-        bottom: 220px;
       }
 
       #wp3d-header-branding {
@@ -2898,7 +2898,7 @@ Click the help icon above to learn more.
     >
       <img
         class="iframe-logo-overlay"
-        src="https://www.iteleport.com.br/wp-content/uploads/2020/07/logo-ASE-85PXALT.png"
+        src="https://www.iteleport.com.br/wp-content/uploads/2016/02/logo001_300-120px.png"
         alt="Tour Virtual 3D"
       />
 
@@ -2913,6 +2913,7 @@ Click the help icon above to learn more.
       />
       <meta itemprop="name" content="Museu Hermínio Bittencourt - Grêmio" />
       <iframe
+        onclick="test()"
         id="mp-iframe"
         src=""
         data-preload="true"
@@ -2921,19 +2922,19 @@ Click the help icon above to learn more.
         allow="vr"
         allowfullscreen
       ></iframe>
-    </div>
 
-    <div class="container-logos-top">
-      <div class="sponsors">
-        <a class="link" target="blank">
-          <img class="logo" />
-        </a>
+      <div class="container-logos-top">
+        <div class="sponsors">
+          <a class="link" target="blank">
+            <img class="logo" />
+          </a>
+        </div>
+
+        <img class="team-logo" src="assets/logos/GREMIO-160px.png" />
       </div>
 
-      <img class="team-logo" src="assets/logos/GREMIO-160px.png" />
+      <img class="ase-logo" src="assets/logos/ASE-85px.png" />
     </div>
-
-    <img class="ase-logo" src="assets/logos/ASE-85px.png" />
 
     <!-- footer buffer start -->
     <!-- footer buffer end -->

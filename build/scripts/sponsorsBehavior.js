@@ -41,10 +41,20 @@ function changeShowingSponsor() {
   }
 
   setTimeout(() => {
+    const banrisulLogo = 1;
+    if (currentSponsor === banrisulLogo) {
+      jQuery(".sponsors").find(".logo").addClass("banrisul-logo");
+    } else {
+      jQuery(".sponsors").find(".logo").removeClass("banrisul-logo");
+    }
     showSponsor(SPONSORS[currentSponsor].link, SPONSORS[currentSponsor].logo);
   }, 400);
 }
 
 function initSponsorShowing() {
   showSponsor(SPONSORS[currentSponsor].link, SPONSORS[currentSponsor].logo);
+}
+
+function test() {
+  console.log("aaaaaaaaaaaaaaaaaaa");
 }

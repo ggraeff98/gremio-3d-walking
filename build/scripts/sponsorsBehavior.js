@@ -16,11 +16,11 @@ const SPONSORS = [
   }
 ];
 
-const FIRS_SPONSOR_TO_SHOW = 0;
+const FIRST_SPONSOR_TO_SHOW = 0;
 
 const LAST_SPONSOR_TO_SHOW_INDEX = SPONSORS.length - 1;
 
-let currentSponsor = FIRS_SPONSOR_TO_SHOW;
+let currentSponsor = FIRST_SPONSOR_TO_SHOW;
 
 function showSponsor(link, logo) {
   jQuery(".sponsors").find(".link").attr("href", link);
@@ -34,10 +34,20 @@ function showSponsor(link, logo) {
 }
 
 function changeShowingSponsor() {
-  if (currentSponsor === LAST_SPONSOR_TO_SHOW_INDEX) {
-    currentSponsor = FIRS_SPONSOR_TO_SHOW;
+  console.log('document.location.pathname => ', document.location.pathname);
+
+  if (document.location.pathname === '/banrisul') {
+    currentSponsor = 1;
+  } else if (document.location.pathname === '/chevrolet') {
+    currentSponsor = 2;
+  } else if (document.location.pathname === '/safeweb') {
+    currentSponsor = FIRST_SPONSOR_TO_SHOW;
   } else {
-    currentSponsor++;
+    if (currentSponsor === LAST_SPONSOR_TO_SHOW_INDEX) {
+      currentSponsor = FIRST_SPONSOR_TO_SHOW;
+    } else {
+      currentSponsor++;
+    }
   }
 
   setTimeout(() => {
@@ -52,9 +62,12 @@ function changeShowingSponsor() {
 }
 
 function initSponsorShowing() {
-  showSponsor(SPONSORS[currentSponsor].link, SPONSORS[currentSponsor].logo);
-}
-
-function test() {
-  console.log("aaaaaaaaaaaaaaaaaaa");
+  if (document.location.pathname === '/banrisul') {
+    currentSponsor = 1;
+  } else if (document.location.pathname === '/chevrolet') {
+    currentSponsor = 2;
+  } else if (document.location.pathname === '/safeweb') {
+    currentSponsor = FIRST_SPONSOR_TO_SHOW;
+  }
+  changeShowingSponsor();
 }

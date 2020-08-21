@@ -34,8 +34,6 @@ function showSponsor(link, logo) {
 }
 
 function changeShowingSponsor() {
-  console.log('document.location.pathname => ', document.location.pathname);
-
   if (document.location.pathname === '/banrisul') {
     currentSponsor = 1;
   } else if (document.location.pathname === '/chevrolet') {

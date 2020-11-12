@@ -1,10 +1,10 @@
 .container-logos-top {
   display: flex;
-  width: 100%;
   position: absolute;
   align-items: center;
   justify-content: center;
   top: 10px;
+  left: 45%;
 }
 
 .sponsors {
@@ -56,15 +56,6 @@
   align-items: center;
 }
 
-.container-logos-top {
-  display: flex;
-  width: 100%;
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  top: 10px;
-}
-
 .ase-logo {
   position: absolute;
   bottom: 65px;
@@ -75,7 +66,7 @@
 @media only screen and (max-width: 768px) {
   .container-logos-top {
     top: 60px;
-    left: -25px;
+    left: 33%;
   }
 }
 
